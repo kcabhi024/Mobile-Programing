@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Android"
+        android:id="@+id/itemAndroid"
+
+        />
+    <item
+        android:title="Java"
+        android:id="@+id/itemJava"
+        />
+    <item
+        android:title="Economics"
+        android:id="@+id/itemEconomics"
+        />
+</menu>
