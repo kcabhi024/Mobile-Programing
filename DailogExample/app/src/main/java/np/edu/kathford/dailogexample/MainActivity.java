@@ -4,6 +4,8 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -42,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        customDialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customDialog();
+            }
+        });
     }
          private  void logoutDialog(){
              AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -66,6 +74,35 @@ public class MainActivity extends AppCompatActivity {
              alertDialog.show();
 
          }
+         private  void customDialog(){
+
+             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+             View view = getLayoutInflater().inflate(R.layout.
+                     dialog_simpleintrest, null);
+
+             EditText principalEditText = view.findViewById(R.id.principalEditText);
+             EditText timeEditText = view.findViewById(R.id.timeEditText);
+             EditText rateEditText = view.findViewById(R.id.rateEditText);
+             Button calculateButton = view.findViewById(R.id.calculateButton);
+             TextView resultTextview = view.findViewById(R.id.resultTextview);
+
+             calculateButton.setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View v) {
+                     double principal = Double.parseDouble(principalEditText.getText().toString().trim());
+                     double rate = Double.parseDouble(rateEditText.getText().toString().trim());
+                     int time = Integer.parseInt(timeEditText.getText().toString().trim());
+
+                     double simpleInterest = (principal*rate*time)/100;
+                     resultTextview.setText("The Simple Interest is  :" + simpleInterest);
+                 }
+             });
+             builder.setView(view);
+             AlertDialog alertDialog = builder.create();
+             alertDialog.show();
+         }
+
+
 
 
 }

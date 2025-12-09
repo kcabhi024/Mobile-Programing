@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <Button
         android:layout_marginTop="100dp"
         android:layout_width="wrap_content"
@@ -12,14 +11,7 @@
         android:id="@+id/logoutButton"
         android:text="LogOut"
         android:textAllCaps="false"
-        />
-    <Button
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/customDialogButton"
-        android:text="Custom Dialog Button"
-        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
         />
     <Button
         android:layout_marginTop="30dp"
@@ -28,6 +20,16 @@
         android:id="@+id/dialogFragmentButton"
         android:text="Dialog Fragment Example"
         android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customDialogButton"
+        android:text="Custom Dialog Button"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
         />
 
 </LinearLayout>
