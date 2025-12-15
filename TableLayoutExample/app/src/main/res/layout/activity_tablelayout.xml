@@ -44,8 +44,10 @@
 
         </TableRow>
     <TableRow
+        android:layout_marginTop="200dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         >
         <TextView
             android:layout_width="match_parent"
@@ -58,7 +60,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Abhishek kc"
+            android:text="Abhi"
             android:textColor="@color/black"
             android:textStyle=""
             android:textSize="20dp"
@@ -66,7 +68,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jadibuti"
+            android:text="Bhaktpur"
             android:textColor="@color/black"
             android:textStyle=""
             android:textSize="20dp"
