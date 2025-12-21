@@ -8,7 +8,7 @@ public class MovieModel {
     private  String Poster;
 
 
-    public  void MovieModel(int id, String name, String duration,String description,String poster){
+    public MovieModel(int id, String name, String duration,String description,String poster){
         this.id = id;
         this.name = name;
         this.duration =duration;
