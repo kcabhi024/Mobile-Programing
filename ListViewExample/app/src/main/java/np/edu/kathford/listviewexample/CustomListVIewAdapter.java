@@ -34,10 +34,10 @@ public class CustomListVIewAdapter extends ArrayAdapter<MovieModel>{
         if(convertView == null){
             convertView = LayoutInflater.from(context).inflate(R.layout.item_movie,parent,false);
 
-            ImageView poster = convertView.findViewById(R.id.poster);
-            TextView name =convertView.findViewById(R.id.name);
-            TextView duration =convertView.findViewById(R.id.duration);
-            TextView description =convertView.findViewById(R.id.description);
+            ImageView poster = convertView.findViewById(R.id.posterImageView);
+            TextView name =convertView.findViewById(R.id.nameTextView);
+            TextView duration =convertView.findViewById(R.id.durationTextView);
+            TextView description =convertView.findViewById(R.id.descriptionTextView);
 
             MovieModel movieModel =movieList.get(position);
             name.setText(movieModel.getName());

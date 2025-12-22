@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
-    android:padding="20dp"
-    >
+    android:layout_margin="24dp">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/listViewButton"
-        android:text="List view Button"
-        android:textAllCaps="false"
-        />
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="ListView Button"
+        android:textAllCaps="false" />
+
+    <Button
         android:id="@+id/gridViewButton"
-        android:text="Grid view Button"
-        android:textAllCaps="false"
-        />
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Grid View Button"
+        android:textAllCaps="false" />
+
+    <Button
         android:id="@+id/recyclerViewButton"
-        android:text="Recyclerview Button"
-        android:textAllCaps="false"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView Button"
+        android:textAllCaps="false" />
 
 </LinearLayout>

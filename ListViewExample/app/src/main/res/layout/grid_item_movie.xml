@@ -1,45 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="220"
-    android:layout_height="240"
+    android:layout_width="180dp"
+    android:layout_height="240dp">
 
-    >
     <ImageView
         android:id="@+id/posterImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/poster"
         android:scaleType="centerCrop"
+        android:src="@drawable/poster" />
 
-        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/black"
         android:layout_alignParentBottom="true"
+        android:background="@color/black_transparent"
+        android:orientation="vertical">
 
-        >
         <TextView
-            android:id="@+id/novieNameTextView"
+            android:id="@+id/movieNameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dhrundar"
+            android:padding="4dp"
+            android:text="Dhurndhar"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            />
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/durationTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3h 30m"
+            android:text="3h:30m"
             android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
